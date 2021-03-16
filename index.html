@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaeri, Front-end Dev</title>
+    
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Source+Code+Pro:wght@500&family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+</head>
+<body>
+    <header>
+        <!-- nav -->
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="index.html" class="logo">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="nav-right">
+                    <a href="index.html">EN</a>
+                    <a href="#">FR</a>
+                    <div class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
+                        <li class="nav-item"><a href="#service" class="nav-link">What I Do</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- hero -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-blank"></div>
+                <div class="hero-text">
+                
+                    <div class="hero-outdent hero-hide">
+                        <p class="hero-code">&lt;<span class="purple">div</span> class=&quot;</p>
+                        <img src="./img/logo.svg" class="hero-logo" alt="jaeri's logo">
+                        <p class="hero-code">&quot;&gt;</p>
+                    </div>
+                    <div class="hero-indent">
+                        <p class="hero-code">  &lt;<span class="purple">p</span> class=&ldquo;hero-desc&rdquo;&gt;</p>
+                        <p><span class="hero-desc-title">a design-oriented front end developer</span> with a big passion for learning, originally from South Korea and currently living in Montreal, Canada.</p>
+                        <p class="hero-code">  &lt;<span class="purple">br</span>&gt;</p>
+                        <p>Loves nature, hanging out with cats and dogs and traveling, and plays Terran at Starcraft.</p>
+                        <p class="hero-code">  &lt;/<span class="purple">p</span>&gt;</p>
+                    </div>
+                    <div class="hero-outdent hero-hide">
+                        <p class="hero-code">&lt;/<span class="purple">div</span>&gt;</p>
+                    </div>
+                
+                </div>
+                
+            </div>
+        </section>
+        <a href="#featured" class="scroll-down"></a>
+    
+    </header>
+
+    <!-- featured -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <a href="" class="featured-content">
+                <div class="featured-desc">
+                    <h3 class="subtitle">FEATURED</h3>
+                    <h3 class="skills">React.js, Node.js, MongoDB</h3>
+                </div>                
+                <h1 class="featured-title">MEGABOX</h1>
+                <div class="arrow"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- What I Do -->
+    <section class="service" id="service">
+        <div class="container">
+            <h3 class="subtitle">WHAT I DO</h3>
+            <div class="service-content">
+                <div class="service_dev card">
+                    <img src="./img/service_dev.svg" alt="simple coding" class="service_dev_img">
+                    <h2>Front-end Dev</h2>
+                    <p>I continue to learn new skills. Based on responsive web design, I love to create websites combining those knowledges while writing clean code.</p>
+                    <h3>I Speak:</h3>
+                    <p class="service_center">HTML, CSS, SCSS, JavaScript</p>
+                    <h3>Dev Tools:</h3>
+                    <div class="service_devTools">
+                        <ul>
+                            <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
+                            <li><i class="fab fa-codepen"></i>Codepen</li>
+                            <li><i class="fab fa-github"></i>Github</li>
+                            <li><i class="fab fa-gitlab"></i>Gitlab</li>
+                        </ul>
+
+                        <ul>
+                            
+                            <li class="service_materialUI_title"><img src="./img/material-ui.svg" alt="" class="service_materialUI">Material UI</li>
+                            <li><img src="./img/MongoDB_logo.png" alt="" class="service_mongoDB">MongoDB</li>
+                            <li><i class="fab fa-node"></i>Node.js</li>
+                            <li><i class="fab fa-react"></i>React.js</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service_design card">
+                    <img src="./img/service_design.svg" alt="graphic design pen tool" class="service_design_img">
+                    <h2>Design</h2>
+                    <p>My approach to web design is simple structure and clean design while ensuring ease of use and interactions.</p>
+                    <h3>I Design:</h3>
+                    <p class="service_center">UI, UX, Web, Mobile</p>
+                    <h3>Design Tools:</h3>
+                    <ul>
+                        <li><img src="./img/Illustrator.png" alt="" class="service_design_img">Adobe Illustrator</li>
+                        <li><img src="./img/indesign.png" alt="" class="service_design_img">Adobe InDesign</li>
+                        <li><img src="./img/photoshop.png" alt="" class="service_design_img">Adobe Photoshop</li>           
+                        <li><img src="./img/Figma.svg" alt="" class="service_design_img figma">Figma</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- What I Do -->
+    <section class="projects">
+
+    </section>
+    
+    
+</body>
+</html>
