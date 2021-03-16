@@ -458,7 +458,14 @@ header {
         
         .hero {
             right:2%;
+
+            .hero-logo {
+                width:15em;
+                margin:1.5em 0;
+            }
         }
+
+        
     }
 
         
@@ -475,6 +482,9 @@ header {
 }
 
 @media (min-width:1400px) {
+
+    
+
     header {
         .hero {
             right:10%;
