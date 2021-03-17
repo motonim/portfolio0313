@@ -74,11 +74,17 @@ img {
 .container {
     max-width:1200px;
     margin: 0 auto;
-    padding: 4em 2em;
+    padding: 3em 2em;
+}
+
+.subtitle {
+    letter-spacing: .5rem;
+    color: var(--clr-secondary);
+    margin-bottom: 3em;
 }
 
 header {
-    background-image: url(../../img/jaeriProfile04.jpg);
+    background-image: url(../../img/hero2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -161,11 +167,11 @@ header {
     // flex-direction: column;
     // align-items: center;
     position: absolute;
-    top:50%;
-    transform: translate(0%, -50%);
-    -webkit-transform:translate(0%, -50%);
+    // top:50%;
+    // transform: translate(0%, -50%);
+    // -webkit-transform:translate(0%, -50%);
     max-width:1200px;
-
+    
 
 
     .container {
@@ -173,7 +179,7 @@ header {
 
         .hero-text {
             line-height: 2;
-            width:400px;
+            max-width:400px;
             
 
 
@@ -258,7 +264,7 @@ header {
                 margin: 0 auto;
                 
                 
-                .subtitle {
+                .featured-subtitle {
                     letter-spacing: .5rem;
                 }
     
@@ -280,10 +286,7 @@ header {
                 text-shadow: 1px 1px 5px var(--clr-bg02);
             }
     
-            .arrow {
-                display: none;
-            }
-        
+            
         }
 
         
@@ -299,12 +302,6 @@ header {
 .service {
     background-color: var(--clr-bg02);
     padding: 5em 0;
-
-    .subtitle {
-        letter-spacing: .5rem;
-        color: var(--clr-secondary);
-        margin-bottom: 2em;
-    }
 
     .service-content {
         
@@ -420,15 +417,9 @@ header {
 
 
 .projects {
-    padding: 5em 0 7em 0;
+    padding: 5em 0;
 
-    .container {
-
-        .subtitle {
-            letter-spacing: .5rem;
-            color: var(--clr-secondary);
-            margin-bottom: 3em;
-        }
+    .container {       
     
         .projects-content {
             position: relative;
@@ -475,32 +466,72 @@ header {
 }
 
 
+///////////////////////////////////////////////
+//-------------------- ABOUT-----------------//
+///////////////////////////////////////////////
 
+
+.about {
+    background-color: var(--clr-bg02);
+    padding: 5em 0;
+
+    .about-content {
+
+        .about-content-text {
+            line-height: 2;
+            max-width:60ch;
+            letter-spacing: .8px;
+
+            p + p {
+                margin-top: 2em;
+            }
+        }
+
+    }
+}
 
 
 @media (max-width:800px) {
     
     header {
-        background-image: url(../../img/jaeriProfile04.jpg);
+        background-image: url(../../img/heroBG.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 20% 50%;
     }
 
-    .hero-text {
-        margin-right: auto;
-        margin-left: auto;
-        line-height: 2;
-        padding: 8em 0 0 0;
+    .hero {
+        width:100%;
+        height:100%;
 
-        .hero-hide {
-            display: none;
-        }
-
-        .hero-indent {
-            margin-left:0;
+        .hero-text {
+            margin-right: auto;
+            margin-left: auto;
+            line-height: 2;
+            padding: 8em 0 0 0;
+    
+            .hero-hide {
+                display: none;
+            }
+    
+            .hero-indent {
+                margin-left:0;
+            }
         }
     }
+
+    
+
+    .featured {
+        .featured-content {
+            .arrow {
+                display: none;
+            }
+        
+        }
+    }
+
+
 
 }
 
@@ -513,7 +544,10 @@ header {
         }
         
         .hero {
-            right:2%;
+            right:0%;
+            top:50%;
+            transform: translate(0%, -50%);
+            -webkit-transform:translate(0%, -50%);
 
             .hero-logo {
                 width:15em;
@@ -538,7 +572,7 @@ header {
                 letter-spacing: .5rem;
                 font-size: 4.5rem;
                 font-family: var(--ff-primary);
-                padding-left: 3rem;
+                margin-left: .4em;
                 margin-top: -.8em;
                 font-weight: 900;
                 text-shadow: 1px 1px 5px var(--clr-bg02);
@@ -548,8 +582,8 @@ header {
                 background: url(../../img/arrow.svg) center center no-repeat;
                 width:80px;
                 height:80px;
-                margin-left: 2em;
-                margin-top: -1rem;
+                margin-left: 5em;
+                margin-top: -1em;
                 transition: all .3s ease-in-out;
             }
 
@@ -647,6 +681,17 @@ header {
 
     }
 
+    .about {
+        .container {
+            .about-content {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+
+
         
     
 }
@@ -655,7 +700,7 @@ header {
     header {
         
         .hero {
-            right:5%;
+            right:2%;
         }
     }
 
@@ -674,7 +719,7 @@ header {
 
     header {
         .hero {
-            right:10%;
+            right:8%;
         }
 
         .hero-logo {
@@ -687,7 +732,7 @@ header {
 @media (min-width:1600px) {
     header {
         .hero {
-            right:15%;
+            right:14%;
         }
     }
 }
