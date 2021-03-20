@@ -14,60 +14,62 @@
 </head>
 <body>
     <header>
-        <!-- nav -->
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-left">
-                    <a href="index.html" class="logo">
-                        <img src="./img/logo.svg" alt="">
-                    </a>
-                </div>
+        
+        <div class="header">
+            <!-- nav -->
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav-left">
+                        <a href="index.html" class="logo">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                    </div>
 
-                <div class="nav-right">
-                    <a href="index.html">EN</a>
-                    <a href="#">FR</a>
-                    <div class="hamburger-menu">
-                        <span></span>
-                        <span></span>
+                    <div class="nav-right">
+                        <a href="index.html">EN</a>
+                        <a href="#">FR</a>
+                        <div class="hamburger-menu">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
+                            <li class="nav-item"><a href="#service" class="nav-link">What I Do</a></li>
+                            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        </ul>
                     </div>
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
-                        <li class="nav-item"><a href="#service" class="nav-link">What I Do</a></li>
-                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- hero -->
-        <section class="hero" id="hero">
-            <div class="container">
-                <div class="hero-text">
-                
-                    <div class="hero-outdent hero-hide">
-                        <p class="hero-code">&lt;<span class="purple">div</span> class=&quot;</p>
-                        <img src="./img/logo.svg" class="hero-logo" alt="jaeri's logo">
-                        <p class="hero-code">&quot;&gt;</p>
+            <!-- hero -->
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="hero-text">
+                    
+                        <div class="hero-outdent hero-hide">
+                            <p class="hero-code">&lt;div class=&quot;</p>
+                            <img src="./img/logo.svg" class="hero-logo" alt="jaeri's logo">
+                            <p class="hero-code">&quot;&gt;</p>
+                        </div>
+                        <div class="hero-indent">
+                            <p class="hero-code">  &lt;p class=&ldquo;hero-desc&rdquo;&gt;</p>
+                            <p class="hero-subtitle"><span class="hero-desc-title">a design-oriented front end developer</span> with a big passion for learning.</p>
+                            <p class="hero-code">  &lt;br&gt;</p>
+                            <p class="hero-subtitle">Loves nature, hanging out with cats and dogs and traveling, and plays Terran at Starcraft.</p>
+                            <p class="hero-code">  &lt;/p&gt;</p>
+                        </div>
+                        <div class="hero-outdent hero-hide">
+                            <p class="hero-code">&lt;/div&gt;</p>
+                        </div>
+                    
                     </div>
-                    <div class="hero-indent">
-                        <p class="hero-code">  &lt;<span class="purple">p</span> class=&ldquo;hero-desc&rdquo;&gt;</p>
-                        <p><span class="hero-desc-title">a design-oriented front end developer</span> with a big passion for learning.</p>
-                        <p class="hero-code">  &lt;<span class="purple">br</span>&gt;</p>
-                        <p>Loves nature, hanging out with cats and dogs and traveling, and plays Terran at Starcraft.</p>
-                        <p class="hero-code">  &lt;/<span class="purple">p</span>&gt;</p>
-                    </div>
-                    <div class="hero-outdent hero-hide">
-                        <p class="hero-code">&lt;/<span class="purple">div</span>&gt;</p>
-                    </div>
-                
+                    
                 </div>
-                
-            </div>
-        </section>
-        <a href="#featured" class="scroll-down"></a>
-    
+            </section>
+            <a href="#featured" class="scroll-down"></a>
+        </div>
     </header>
 
     <!-- featured -->
@@ -180,11 +182,27 @@
             <div class="about-content">
                 <div class="about-content-text">
                     <p>I’m Jaeri (pronounced just like ‘Tom&Jerry’), a passionate self-taught web developer, originally from South Korea and currently livign in Montreal, Canada.</p>
-                    <p>My journey as a coder started from creating a website for a cafe in Seoul, Korea. Also as a part of the Computer Graphics program in Rosemount Technology Centre in Montreal, I had an opportunity to get a glimpse of HTML and CSS. Since then, Udemy, Scrimba, and YouTube are my teachers. I’m so grateful that I can learn these fascinating skills online thanks to the technology!</p>
+                    <p>My journey as a coder started from creating a website for a cafe in Seoul, Korea. Also as a part of the Computer Graphics program in Rosemount Technology Centre in Montreal, I had an opportunity to get a glimpse of HTML and CSS. Since then, I was mesmerized by the web dev and now Udemy, Scrimba, and YouTube are my teachers. I’m so grateful that I can learn these fascinating skills online thanks to the technology!</p>
+                    <a href="" class="download">Download Resume</a>
                 </div>
                 <div class="about-content-img">
-                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="jaeripark"><a class="LI-simple-link" href='https://ca.linkedin.com/in/jaeripark/en-us?trk=profile-badge'>Jaeri Park</a></div>
+                    <div class="about-content-profile">
+                        <div class="about-content-profile-img">
+                            <img src="./img/IMGjaeri.jpg" alt="" class="about-pic">
+                        </div>
+                        <div class="about-content-profile-text">
+                            <h2>Jaeri Park</h2>
+                            <p>Front-end Developer</p>
+                            <p>Montreal, Quebec, Canada</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-content-cta">
+                        <button>VIEW PROFILE</button>
+                        <img src="./img/linkedinlogo.png" alt="" class="about-linkedin">
+                    </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -192,27 +210,62 @@
     <!-- Contact -->
 
     <section class="contact" id="contact">
-        <p>If you are interested in working together<br>
-            and want to know more about the specifics of what I can offer you,<br>
-            just send me a message! I'll look forward to hearing from you! </p>
-        <a href="mailto:jaeri.pk@gmail.com" class="email">
-            <img src="./img/contact.svg" alt="">
-        </a>
+        <div class="container">
+            <h3 class="subtitle">CONTACT</h3>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <p>If you are interested in working together
+                    and want to know more about the specifics of what I can offer you,
+                    feel free to reach me out! Look forward to hearing from you :D </p>
+
+                    <a href="mailto:jaeri.pk@gmail.com" target="_blank"><i class="fas fa-envelope"></i>jaeri.pk@gmail.com</a>
+                    <a href="jaeripark.com" target="_blank"><i class="fas fa-home"></i>www.jaeripark.com</a>
+
+                    <div class="social">
+                        <a href="#"><i class="fab fa-gitlab fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form action="/handling-form" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="What Is Your Name?">
+                            </li>
+                            <li>
+                                <label for="mail">Your Email</label>
+                                <input type="email" id="mail" placeholder="What Is Your Email?">
+                            </li>
+                            <li>
+                                <label for="msg">Message</label>
+                                <textarea placeholder="Please leave your message here" id="msg"></textarea>
+                            </li>
+                            <li class="button">
+                                <button type="submit">SEND MESSAGE</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
         
     </section>
 
     <!-- Footer -->
     <footer>
-        <img src="./img/logo.svg" alt="">
-        <div class="social">
-            <a href="#"><i class="fab fa-gitlab"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+        <div class="container">
+            <a href="#home"><img class="footer-logo" src="./img/logo.svg" alt=""></a>
+            <div class="social">
+                <a href="#"><i class="fab fa-gitlab fa-2x"></i></a>
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <p><script>document.write(new Date().getFullYear())</script> &copy; Jaeri Park</p>
         </div>
-        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Jaeri Park All Rights Reserved</p>
-
     </footer>
 
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
