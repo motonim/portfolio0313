@@ -119,18 +119,28 @@ header {
   padding: 25px;
   display: block;
   cursor: pointer;
+  position: relative;
 }
 
 .item-inner h4 {
-  font-size: 30px;
-  color: #fff;
+  font-size: 35px;
+  color: var(--clr-accent);
   text-transform: capitalize;
+  text-shadow: 1px 1px 1px rgba(64, 67, 71, 0.7);
+  text-align: left;
+  position: absolute;
+  left: 8%;
+  bottom: 8%;
 }
 
 .item-inner p {
   font-size: 16px;
+  color: var(--clr-bg02);
   text-transform: capitalize;
   letter-spacing: 1px;
+  position: absolute;
+  left: 8%;
+  top: 10%;
 }
 
 .test-social {
@@ -400,7 +410,7 @@ header {
 
       .featured-desc {
         color: var(--clr-accent);
-        background-image: url(../../img/featured_bg.jpg);
+        background-image: url(../../img/featured_bg_02.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -411,7 +421,9 @@ header {
         margin: 0 auto;
 
         .featured-subtitle {
+          font-size: 1.7rem;
           letter-spacing: 0.5rem;
+          text-shadow: 1px 1px 1px rgba(64, 67, 71, 0.7);
         }
 
         .skills {
@@ -423,7 +435,7 @@ header {
 
       .featured-title {
         color: var(--clr-accent);
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.125em;
         font-size: 3rem;
         font-family: var(--ff-primary);
         padding-left: 80px;
@@ -550,24 +562,22 @@ header {
   padding: 15em 0 5em;
 
   .container {
-    .projects-list {
-      .projects-content {
-        background-color: red;
-        width: 100px;
-        height: 100px;
-        display: inline-block;
-
-        .projects-title {
-          color: var(--clr-accent);
-          letter-spacing: 0.5rem;
-          font-size: 3rem;
-          font-family: var(--ff-primary);
-          padding-left: 1em;
-          margin-top: -0.9em;
-          font-weight: 900;
-          text-shadow: 1px 1px 5px var(--clr-bg02);
-        }
-      }
+    .item-inner {
+      height: 400px;
+      background-position: center;
+      background-size: cover;
+    }
+    #project01 {
+      background-image: url(../../img/project_megabox.jpg);
+    }
+    #project02 {
+      background-image: url(../../img/project_tourtravel.jpg);
+    }
+    #project05 {
+      background-image: url(../../img/project_tasktracker.jpg);
+    }
+    #project06 {
+      background-image: url(../../img/project_business.jpg);
     }
   }
 }
@@ -742,6 +752,7 @@ header {
               padding: 1em;
               border: none;
               background-color: #393b3f;
+              color: #fff;
             }
 
             textarea {
@@ -753,6 +764,7 @@ header {
               font-family: var(--ff-body);
               border: none;
               background-color: #393b3f;
+              color: #fff;
             }
 
             button {
