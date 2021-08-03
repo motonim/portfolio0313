@@ -573,12 +573,20 @@ header {
   background-image: url(../../img/project_tourtravel.jpg);
 }
 
+.projects .container #project03 {
+  background-image: url(../../img/featured_bg_02.jpg);
+}
+
 .projects .container #project05 {
   background-image: url(../../img/project_tasktracker.jpg);
 }
 
 .projects .container #project06 {
   background-image: url(../../img/project_business.jpg);
+}
+
+.projects .container #project07 {
+  background-image: url(../../img/project_samscoffee.jpg);
 }
 
 .about {
