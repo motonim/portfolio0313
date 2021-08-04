@@ -873,6 +873,8 @@ footer p {
   }
   .featured .container .featured-content .featured-desc {
     padding: 1em 2em;
+    background-size: 330%;
+    background-position: 65% 50%;
   }
   .featured .container .featured-content .featured-title {
     letter-spacing: 0em;
@@ -886,8 +888,9 @@ footer p {
     margin: 0 auto;
   }
   .projects .container .card .slider .slick-list .slick-track .item .item-inner {
-    height: 300px;
-    background-position: 60% 50%;
+    height: 400px;
+    background-position: 60% 65%;
+    background-size: 330%;
   }
   .projects .container .card .slider .slick-list .slick-track .item .item-inner p {
     top: 5%;
