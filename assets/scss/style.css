@@ -881,6 +881,7 @@ footer p {
     line-height: 2;
     padding: 8em 0 0 0;
     width: 90%;
+    font-size: 17px;
   }
   header .hero .hero-text .hero-hide {
     display: none;
