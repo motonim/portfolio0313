@@ -187,19 +187,21 @@ header {
   border-radius: 50px;
   width: 100px;
   outline: none;
+
 }
 
 .slick-next {
-  left: 52%;
+  left: 50%;
   cursor: pointer;
   font-family: var(--ff-primary);
   background-color: var(--clr-accent);
   color: var(--clr-bg01);
   transition: all 0.3s ease-in-out;
+
 }
 
 .slick-prev {
-  left: 40%;
+  left: 36%;
   cursor: pointer;
   font-family: var(--ff-primary);
   background-color: var(--clr-accent);
@@ -215,6 +217,7 @@ header {
   padding-top: 55px !important;
   padding-bottom: 55px !important;
 }
+
 
 ///////////////////////////////////////////////
 //-------------------- NAVBAR ---------------//
@@ -933,6 +936,7 @@ footer {
   }
 
   .projects {
+    padding: 5em 0;
     .container {
       .card {
         .slider {

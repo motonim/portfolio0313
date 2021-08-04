@@ -183,7 +183,7 @@ header {
 }
 
 .slick-next {
-  left: 52%;
+  left: 50%;
   cursor: pointer;
   font-family: var(--ff-primary);
   background-color: var(--clr-accent);
@@ -193,7 +193,7 @@ header {
 }
 
 .slick-prev {
-  left: 40%;
+  left: 36%;
   cursor: pointer;
   font-family: var(--ff-primary);
   background-color: var(--clr-accent);
@@ -901,6 +901,9 @@ footer p {
   }
   .service .service-content .card .service_devTools ul {
     margin: 0 auto;
+  }
+  .projects {
+    padding: 5em 0;
   }
   .projects .container .card .slider .slick-list .slick-track .item .item-inner {
     height: 400px;
