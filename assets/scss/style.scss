@@ -91,6 +91,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000
 }
 
 .sticky + .content {
@@ -292,7 +293,7 @@ header {
         top: 0;
         right: 0;
         // border-radius: 0 0 0 100%;
-        background: var(--clr-bg01);
+        background: rgba(42, 44, 48, .9);
         padding: 50px 50px;
         z-index: 98;
         transform: scaleX(0);
@@ -305,6 +306,7 @@ header {
 
         li {
           list-style: none;
+          margin-bottom: 10px;
 
           a {
             text-decoration: none;
@@ -728,12 +730,16 @@ header {
             display: inline-block;
             color: var(--clr-secondary);
             transition: all 0.3s ease-in-out;
+            .fa-github {
+              margin-right: 1em;
+            }
           }
 
           a:hover {
             opacity: 0.3;
             transform: transition 330ms ease-in-out;
           }
+          
         }
       }
 
@@ -847,19 +853,35 @@ footer {
 }
 
 @media (max-width: 800px) {
+  
   header {
     background-image: url(../../img/hero_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% 50%;
 
-    .nav-left {
-      .logo {
-        display: block;
-        margin-top: 0.5em;
-        width: 80px;
+    .nav {
+      .container {
+        .nav-right {
+          .nav-list {
+            width: 53%;
+            li {
+              a {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+        .nav-left {
+          .logo {
+            display: block;
+            margin-top: 0.5em;
+            width: 80px;
+          }
+        }
       }
     }
+    
 
     .hero {
       width: 100%;

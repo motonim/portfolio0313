@@ -81,6 +81,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .sticky + .content {
@@ -215,10 +216,6 @@ header {
   background-color: rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000
 }
 
 .nav .container {
@@ -305,7 +302,7 @@ header {
   margin: 0 auto;
   top: 0;
   right: 0;
-  background: var(--clr-bg01);
+  background: rgba(42, 44, 48, 0.9);
   padding: 50px 50px;
   z-index: 98;
   -webkit-transform: scaleX(0);
@@ -331,6 +328,7 @@ header {
 
 .nav .container .nav-right .nav-list li {
   list-style: none;
+  margin-bottom: 10px;
 }
 
 .nav .container .nav-right .nav-list li a {
@@ -737,6 +735,10 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
+.contact .container .contact-content .contact-left .social a .fa-github {
+  margin-right: 1em;
+}
+
 .contact .container .contact-content .contact-left .social a:hover {
   opacity: 0.3;
   -webkit-transform: transition 330ms ease-in-out;
@@ -852,16 +854,19 @@ footer p {
 }
 
 @media (max-width: 800px) {
-  .nav .container .nav-right .nav-list li a {
-    font-size: 1rem;
-  }
   header {
     background-image: url(../../img/hero_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% 50%;
   }
-  header .nav-left .logo {
+  header .nav .container .nav-right .nav-list {
+    width: 53%;
+  }
+  header .nav .container .nav-right .nav-list li a {
+    font-size: 1rem;
+  }
+  header .nav .container .nav-left .logo {
     display: block;
     margin-top: 0.5em;
     width: 80px;
