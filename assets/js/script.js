@@ -60,3 +60,9 @@ $('.hamburger-menu').on('click', function () {
   $(this).toggleClass('close');
   $('.nav-list').toggleClass('show');
 });
+
+// function closeNav() {
+//   document.querySelector('.hamburger-menu').classList.add('close')
+// }
+
+// document.querySelector('body').addEventListener('click', closeNav)
