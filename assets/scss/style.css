@@ -871,23 +871,66 @@ footer p {
   header .hero .hero-text .hero-hide {
     display: none;
   }
-  .featured .featured-content .arrow {
+  .featured .container .featured-content .featured-desc {
+    padding: 1em 2em;
+  }
+  .featured .container .featured-content .featured-title {
+    letter-spacing: 0em;
+    padding-left: 40px;
+    font-size: 2.25rem;
+  }
+  .featured .container .featured-content .arrow {
     display: none;
   }
-  .about-content-img {
+  .service .service-content .card .service_devTools ul {
+    margin: 0 auto;
+  }
+  .projects .container .card .slider .slick-list .slick-track .item .item-inner {
+    height: 300px;
+    background-position: 60% 50%;
+  }
+  .projects .container .card .slider .slick-list .slick-track .item .item-inner p {
+    top: 5%;
+    font-size: 13px;
+  }
+  .projects .container .card .slider .slick-list .slick-track .item .item-inner h4 {
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 35px;
+    text-shadow: 2px 2px 1px rgba(64, 67, 71, 0.7);
+  }
+  .about .about-content .about-content-img {
     background-color: #393b3f;
     border-radius: 10px;
     max-width: 500px;
     margin: 3em auto 0 auto;
   }
-  .about-content-img .about-content-profile .about-content-profile-text {
-    line-height: 1;
+  .about .about-content .about-content-img .about-content-profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .about-content-img .about-content-profile .about-content-profile-text p {
+  .about .about-content .about-content-img .about-content-profile .about-content-profile-img {
+    width: 100%;
+  }
+  .about .about-content .about-content-img .about-content-profile .about-content-profile-img .about-pic {
+    margin: 0 auto;
+  }
+  .about .about-content .about-content-img .about-content-profile .about-content-profile-text {
+    line-height: 1.5;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .about .about-content .about-content-img .about-content-profile .about-content-profile-text p {
     font-size: 1rem;
   }
-  .about-content-img .about-content-profile .about-content-profile-text h2 {
+  .about .about-content .about-content-img .about-content-profile .about-content-profile-text h2 {
     font-size: 2rem;
+  }
+  .about .about-content .about-content-img .about-content-cta button {
+    font-size: 12px;
   }
   .contact .contact-left p {
     max-width: 65ch;
@@ -899,6 +942,10 @@ footer p {
   .contact .contact-right {
     margin-top: 3em;
   }
+}
+
+footer {
+  padding: 0;
 }
 
 @media (min-width: 800px) {
