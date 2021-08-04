@@ -303,7 +303,7 @@ header {
   top: 0;
   right: 0;
   background: rgba(42, 44, 48, 0.9);
-  padding: 50px 50px;
+  padding: 50px 5px;
   z-index: 98;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -861,7 +861,7 @@ footer p {
     background-position: 20% 50%;
   }
   header .nav .container .nav-right .nav-list {
-    width: 53%;
+    width: 45%;
   }
   header .nav .container .nav-right .nav-list li a {
     font-size: 1rem;

@@ -294,7 +294,7 @@ header {
         right: 0;
         // border-radius: 0 0 0 100%;
         background: rgba(42, 44, 48, .9);
-        padding: 50px 50px;
+        padding: 50px 5px;
         z-index: 98;
         transform: scaleX(0);
         transform-origin: right;
@@ -864,7 +864,7 @@ footer {
       .container {
         .nav-right {
           .nav-list {
-            width: 53%;
+            width: 45%;
             li {
               a {
                 font-size: 1rem;
