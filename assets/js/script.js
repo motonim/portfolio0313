@@ -22,34 +22,12 @@ $('.slider').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '10px',
         slidesToShow: 1,
       },
     },
   ],
 });
-
-// $('.slider').slick({
-//   centerMode: true,
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 1500,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         slidesToShow: 3,
-//       },
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         slidesToShow: 1,
-//       },
-//     },
-//   ],
-// });
 
 window.addEventListener('scroll', function () {
   var nav = document.querySelector('.nav');
