@@ -101,8 +101,11 @@ header {
   outline: none;
 }
 
+.item-inner:focus {
+  outline: none;
+}
+
 .item-inner {
-  background: linear-gradient(45deg, #ff6600, #fff000);
   border-radius: 18px;
   text-align: center;
   padding: 25px;
@@ -359,6 +362,10 @@ header {
   right: 0;
 }
 
+.nav .container .nav-right .nav-list li a:focus {
+  outline: none;
+}
+
 .nav .container .nav-right .nav-list.show {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -403,6 +410,10 @@ header {
           transform: translate(-50%, 0);
   z-index: 3;
   border-radius: 10px;
+}
+
+.scroll-down:focus {
+  outline: none;
 }
 
 .featured {
@@ -455,6 +466,10 @@ header {
   margin-top: -0.8em;
   font-weight: 900;
   text-shadow: 1px 1px 5px rgba(34, 37, 41, 0.7);
+}
+
+.featured .container .featured-content:focus {
+  outline: none;
 }
 
 .service {
@@ -728,6 +743,10 @@ header {
           transform: transition 330ms ease-in-out;
 }
 
+.contact .container .contact-content .contact-left a:focus {
+  outline: none;
+}
+
 .contact .container .contact-content .contact-left .social a {
   display: inline-block;
   color: var(--clr-secondary);
@@ -743,6 +762,10 @@ header {
   opacity: 0.3;
   -webkit-transform: transition 330ms ease-in-out;
           transform: transition 330ms ease-in-out;
+}
+
+.contact .container .contact-content .contact-left .social a:focus {
+  outline: none;
 }
 
 .contact .container .contact-content .contact-right form {
@@ -847,6 +870,10 @@ footer .social a:hover {
   opacity: 0.3;
   -webkit-transform: transition 330ms ease-in-out;
           transform: transition 330ms ease-in-out;
+}
+
+footer .social a:focus {
+  outline: none;
 }
 
 footer p {

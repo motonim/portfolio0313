@@ -51,10 +51,10 @@ $('.slider').slick({
 //   ],
 // });
 
-// window.addEventListener("scroll", function(){
-//     var nav = document.querySelector(".nav");
-//     nav.classList.toggle("sticky", window)
-// });
+window.addEventListener('scroll', function () {
+  var nav = document.querySelector('.nav');
+  nav.classList.toggle('sticky', window);
+});
 
 $('.hamburger-menu').on('click', function () {
   $(this).toggleClass('close');

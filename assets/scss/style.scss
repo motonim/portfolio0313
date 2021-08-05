@@ -91,7 +91,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000
+  z-index: 1000;
 }
 
 .sticky + .content {
@@ -113,8 +113,11 @@ header {
   outline: none;
 }
 
+.item-inner:focus {
+  outline: none;
+}
+
 .item-inner {
-  background: linear-gradient(45deg, #ff6600, #fff000);
   border-radius: 18px;
   text-align: center;
   padding: 25px;
@@ -176,6 +179,7 @@ header {
   transform: scale(1);
   opacity: 1;
 }
+
 // slide control
 .slick-arrow {
   position: absolute;
@@ -187,7 +191,6 @@ header {
   border-radius: 50px;
   width: 100px;
   outline: none;
-
 }
 
 .slick-next {
@@ -197,7 +200,6 @@ header {
   background-color: var(--clr-accent);
   color: var(--clr-bg01);
   transition: all 0.3s ease-in-out;
-
 }
 
 .slick-prev {
@@ -217,7 +219,6 @@ header {
   padding-top: 55px !important;
   padding-bottom: 55px !important;
 }
-
 
 ///////////////////////////////////////////////
 //-------------------- NAVBAR ---------------//
@@ -296,7 +297,7 @@ header {
         top: 0;
         right: 0;
         // border-radius: 0 0 0 100%;
-        background: rgba(42, 44, 48, .9);
+        background: rgba(42, 44, 48, 0.9);
         padding: 50px 5px;
         z-index: 98;
         transform: scaleX(0);
@@ -334,6 +335,9 @@ header {
           a:hover:before {
             width: 100%;
             right: 0;
+          }
+          a:focus {
+            outline: none;
           }
         }
       }
@@ -399,6 +403,10 @@ header {
   border-radius: 10px;
 }
 
+.scroll-down:focus {
+  outline: none;
+}
+
 ///////////////////////////////////////////////
 //---------------- FEATURED -----------------//
 ///////////////////////////////////////////////
@@ -448,6 +456,9 @@ header {
         font-weight: 900;
         text-shadow: 1px 1px 5px rgba(34, 37, 41, 0.7);
       }
+    }
+    .featured-content:focus {
+      outline: none;
     }
   }
 }
@@ -728,6 +739,10 @@ header {
           transform: transition 330ms ease-in-out;
         }
 
+        a:focus {
+          outline: none;
+        }
+
         .social {
           a {
             display: inline-block;
@@ -742,7 +757,10 @@ header {
             opacity: 0.3;
             transform: transition 330ms ease-in-out;
           }
-          
+
+          a:focus {
+            outline: none;
+          }
         }
       }
 
@@ -848,6 +866,10 @@ footer {
       opacity: 0.3;
       transform: transition 330ms ease-in-out;
     }
+
+    a:focus {
+      outline: none;
+    }
   }
 
   p {
@@ -856,7 +878,6 @@ footer {
 }
 
 @media (max-width: 800px) {
-  
   header {
     background-image: url(../../img/hero_bg.jpg);
     background-repeat: no-repeat;
@@ -884,7 +905,6 @@ footer {
         }
       }
     }
-    
 
     .hero {
       width: 100%;
